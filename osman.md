@@ -1,7 +1,7 @@
 blockchain-security-framework/  
 │
-├── README.md                # Proje açıklaması ve kullanım talimatları  
-├── LICENSE                  # Lisans bilgisi 
+├── README.md                 
+├── LICENSE                 
 ├── docs/                    # Dokümantasyon dosyaları  
 │   ├── framework_overview.md  
 │   └── architecture_diagram.png    
