@@ -11,22 +11,44 @@ A multi-layered framework designed to enhance blockchain security, mitigate arbi
 ## Architecture Overview
 ![Architecture Diagram](docs/architecture_diagram.png)
 
-## Installation
-Clone the repository and install the required dependencies:
-```bash
-git clone https://github.com/yourusername/blockchain-security-framework.git
-cd blockchain-security-framework
-pip install -r requirements.txt
-``` 
+# Blockchain Security Framework with Apache Hive
 
-## Usage  
-Run each layer individually or as a complete system:  
+This project implements a multi-layered blockchain security framework. The Data Warehouse layer is built on Apache Hive to organize and classify blockchain transaction data in real-time.
 
+## Features
+- Direct data flow from Input Layer to Hive
+- Real-time transaction classification and storage
+- Anomaly detection and risk scoring in subsequent layers
+
+## Setup
+### Prerequisites
+- Hadoop and Hive installed
+- Python 3.8+
+- Required Python packages (`pyhive`, `requests`)
+
+### Installation
+1. Clone the repository:
 ```bash  
-python code/input_layer.py
-python code/processing_layer.py
+   git clone https://github.com/yourusername/blockchain-security-framework.git  
+   cd blockchain-security-framework  
+```  
+
+2. install requirements.
+```bash  
+pip install -r requirements.txt
 ```
 
+hive -f data_warehouse/setup_hive.sql
 
+Create the Hive table:
+
+```bash
+hive -f data_warehouse/setup_hive.sql
+```
+
+Run the Input Layer to collect and send data:
+```bash
+python input_layer/collect_data.py
+```
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue.
