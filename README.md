@@ -1,4 +1,4 @@
-# Blockchain Security Framework
+# Blockchain AML - Security Framework
 
 A multi-layered framework designed to enhance blockchain security, mitigate arbitrage attacks, prevent liquidity exploits, and ensure AML compliance.
 
