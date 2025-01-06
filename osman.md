@@ -1,20 +1,19 @@
-blockchain-security-framework/  
+aml-framework/   
 │
-├── README.md                 
-├── LICENSE                 
-├── docs/                    # Dokümantasyon dosyaları  
-│   ├── framework_overview.md  
-│   └── architecture_diagram.png    
-├── code/                    # Kod dosyaları  
-│   ├── input_layer.py  
-│   ├── data_warehouse_layer.sql  
-│   ├── processing_layer.py  
-│   ├── decision_layer.py  
-│   └── output_layer.py  
-├── tests/                   # Test dosyaları  
-│   ├── test_input_layer.py  
-│   ├── test_processing_layer.py  
-│   └── test_output_layer.py  
-└── examples/                  
-    ├── sample_transactions.json  
-    └── anomaly_detection_demo.ipynb  
+├── README.md                  
+├── LICENSE                
+├── requirements.txt          
+├── input_layer/              
+│   ├── collect_data.py  
+│   └── clean_data.py  
+├── data_warehouse/             
+│   ├── setup_hive.sql  
+│   └── load_data.py   
+├── processing_layer/        # Veri işleme ve skor hesaplama  
+│   ├── anomaly_detection.py   
+│   └── risk_scoring.py   
+├── decision_layer/          # Karar katmanı  
+│   └── decision_maker.py  
+└── tests/                     
+    ├── test_processing.py  
+    └── test_decision_layer.py  
