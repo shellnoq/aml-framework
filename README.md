@@ -42,13 +42,14 @@ hive -f data_warehouse/setup_hive.sql
 
 Create the Hive table:
 
-```bash
+```bash  
 hive -f data_warehouse/setup_hive.sql
 ```
 
 Run the Input Layer to collect and send data:
 ```bash
 python input_layer/collect_data.py
-```
+```  
+
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue.
