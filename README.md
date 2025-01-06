@@ -51,5 +51,10 @@ Run the Input Layer to collect and send data:
 python input_layer/collect_data.py
 ```  
 
+Query data from Hive:  
+``` bash
+python data_warehouse/query_data.py
+``` 
+
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue.
