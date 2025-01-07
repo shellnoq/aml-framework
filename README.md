@@ -20,7 +20,7 @@ This project implements a multi-layered blockchain security framework. The Data 
 - Real-time transaction classification and storage
 - Anomaly detection and risk scoring in subsequent layers
 
-## Layers
+## Layers  
 1. **Input Layer:** Collects raw blockchain data and securely sends it to the Data Warehouse.
 2. **Data Warehouse Layer:** Stores and organizes data using Apache Hive.
 3. **Processing Layer:** Detects anomalies and calculates risk scores.
