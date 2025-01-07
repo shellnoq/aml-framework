@@ -11,7 +11,7 @@ A multi-layered framework designed to enhance blockchain security, mitigate arbi
 ## Architecture Overview
 ![Architecture Diagram](docs/architecture_diagram.png)
 
-# Blockchain Security Framework with Apache Hive
+# Blockchain AML-Security Framework 
 
 This project implements a multi-layered blockchain security framework. The Data Warehouse layer is built on Apache Hive to organize and classify blockchain transaction data in real-time.
 
@@ -55,6 +55,17 @@ Query data from Hive:
 ``` bash
 python data_warehouse/query_data.py
 ``` 
+
+## Kütüphane Açıklamaları
+pyhive: Apache Hive ile Python arasında bağlantı kurmak için kullanılır.
+thrift ve thrift-sasl: HiveServer2 bağlantısı için gerekli protokol ve kimlik doğrulama desteğini sağlar.
+sasl: Hive ile güvenli kimlik doğrulama için gereklidir.
+requests: API'lerden veri toplamak için kullanılır.
+pandas: Verilerin işlenmesi ve düzenlenmesi için güçlü bir kütüphanedir.
+scikit-learn: Makine öğrenimi algoritmaları ile risk skorlama ve anomali tespiti için.
+tensorflow (Opsiyonel): Gelişmiş yapay zeka analizleri için.
+sqlalchemy (Opsiyonel): SQL tabanlı işlemler ve Hive bağlantısı için ek destek sağlar.
+
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue.
